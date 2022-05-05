@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_margin="3dp"
+    app:cardCornerRadius="5dp"
+    android:foreground="?android:attr/selectableItemBackground"
+    >
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <ImageView
+                android:layout_width="120dp"
+                android:layout_height="80dp"
+                android:id="@+id/imageViewProductImage"/>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+                        <TextView
+                            android:id="@+id/textViewTitle"
+                            style="@style/TextAppearance.AppCompat.Title"
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="5dp"
+                            android:layout_weight="1"
+                            android:ellipsize="end"
+                            android:maxLines="1"
+                            android:text="title" />
+                            <View
+                                android:layout_width="12dp"
+                                android:layout_height="12dp"
+                                android:layout_margin="5dp"
+                                android:id="@+id/viewPublished"
+                                android:background="@drawable/circle_published"/>
+                    </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_margin="3dp">
+
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:id="@+id/textviewPrice"
+                            style="@style/TextAppearance.AppCompat.Title"
+                            android:ellipsize="end"
+                            android:maxLines="1"
+                            android:layout_margin="3dp"
+                            android:text="price"
+                            android:layout_weight="10"
+                            android:gravity="left|center_vertical"
+                            android:textSize="18dp"/>
+                    <TextView
+                        android:id="@+id/textViewProductPlace"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:text="place"
+                        style="@style/TextAppearance.AppCompat.Title"
+                        android:ellipsize="end"
+                        android:maxLines="1"
+                        android:layout_margin="3dp"
+                        android:layout_weight="12"
+                        android:textSize="13dp"
+                        android:gravity="left|bottom" />
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="12"
+                        style="@style/TextAppearance.AppCompat.Title"
+                        android:ellipsize="end"
+                        android:maxLines="1"
+                        android:id="@+id/textviewTime"
+                        android:textSize="11dp"
+                        android:gravity="right|bottom"
+                        android:text="time duration"
+                        android:textColor="@color/dark_mid"
+                        android:layout_margin="3dp" />
+
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+</androidx.cardview.widget.CardView>
