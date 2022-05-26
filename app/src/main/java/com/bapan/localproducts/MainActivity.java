@@ -55,8 +55,6 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
         
-        //This is master branch//
-        
         AppCompatDelegate.setDefaultNightMode(AppCompatDelegate.MODE_NIGHT_NO); //  Disable dark-mode
         sharedPrepData = new SharedPrepData(this);
         if(sharedPrepData.getId().length() != 18){
